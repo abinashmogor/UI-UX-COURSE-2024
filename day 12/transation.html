@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+
+        body{
+            background-color: black;
+        }
+        .box{
+            height: 250px;
+            width: 250px;
+            background-color: aqua;
+            transition: all 2s ;
+            transition-property: height;
+            transition-duration: 2s;
+            /* transition-timing-function: ease-in; */
+            transition-timing-function: cubic-bezier();
+        }
+
+        .box:hover{
+            background-color: brown;
+            cursor: pointer;
+            height: 500px;
+            border-radius: 50%;
+            width: 500px;
+        }
+
+        .earth{
+            display: flex;
+            height: 200px;
+            width: 200px;
+            background-color: rgb(148, 151, 151);
+            transition: all 2s;
+            transition-property: transform;
+            transition-duration: 2s;
+            border-radius: 50%;
+            box-shadow: 2px 2px 2px 2px red;
+        }
+
+        .earth:hover{
+            background-color: rgb(234, 71, 11);
+            transition: all;
+            border-radius: 50%;
+            box-shadow: 4px 4px 4px 4px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="earth"></div>
+
+</body>
+</html>
