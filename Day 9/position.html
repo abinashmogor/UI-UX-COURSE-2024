@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            border: 4px solid red;
+            width: 300px;
+            position: relative;
+        }
+
+        .minibox {
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+        }
+
+        #mini1 {
+            position: static;
+            background-color: lightgreen;
+            margin-top: 2rem;
+        }
+        #mini2{
+            /* position: relative; */
+            background-color: lightcoral;
+            /* top: 2rem; */
+        }
+        #mini3{
+            position: absolute;
+            background-color: lightseagreen;
+            right: 0;
+            /* top: 0; */
+            bottom: 0;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="minibox" id="mini1"></div>
+        <div class="minibox" id="mini2"></div>
+        <div class="minibox" id="mini3"></div>
+    </div>
+
+    <!-- <h1>Position Types</h1>
+    <ol>
+        <li>static(default)</li>
+        <li>relative(relative to it's own position)</li>
+        <li>absolute(relative to the parent)</li>
+        <li>fixed(scroll)</li>
+        <li>sticky(scroll)</li>
+    </ol> -->
+
+
+
+
+</body>
+
+</html>
