@@ -1,0 +1,139 @@
+/* General Reset */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px 25px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Logo Styling */
+nav .logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navigation Links Styling */
+nav .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px 20px;
+}
+
+nav .nav-links li {
+    margin-left: 20px;
+}
+
+nav .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav .nav-links a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+
+/* main  */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #000000;
+    color: white;
+}
+
+main .container{
+    flex-direction: column;
+}
+
+main h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+
+/* footer  */
+
+div .footercontent{
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 1rem;
+    bottom: 0;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+footer .social-media a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+footer p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+footer.social-media a:hover{
+    color: #555;
+}
+
+
+
+
+
+
+
+
