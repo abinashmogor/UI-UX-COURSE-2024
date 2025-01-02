@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animation</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .parent{
+            border: 2px solid;
+            padding: 2px;
+            border-radius: 20px;
+        }
+
+        .box {
+            height: 30px;
+            width: 30px;
+            background-color: lightgreen;
+            position: relative;
+            animation-name: movebox;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            border-radius: 20px;
+        }
+
+        /* @keyframes movebox {
+            for{ 
+                margin: 0;
+                background-color: blueviolet;
+            }
+            to{
+                margin-top: 200px;
+                background-color: red;
+            }
+        } */
+        /* 
+
+        @keyframes movebox {
+            0%{ 
+                top: 0;
+                left: 0;
+                background-color: blueviolet;
+            }
+            25%{ 
+                left: 200px;
+                top: 0;
+                background-color: blueviolet;
+            }
+            50%{ 
+                top: 200px;
+                left: 200px;
+                background-color: blueviolet;
+            }
+            75%{ 
+                top: 200px;
+                left: 0px;
+                background-color: blueviolet;
+            }
+            100%{
+                top: 0;
+                background-color: red;
+            }
+        } */
+
+        @keyframes movebox {
+            0% {
+                background-color: blueviolet;
+                width: 0;
+            }
+
+            25% {
+                width: 25%;
+                background-color: blueviolet;
+            }
+
+            50% {
+                width: 50%;
+                background-color: blueviolet;
+            }
+
+            75% {
+                width: 75%;
+                background-color: blueviolet;
+            }
+
+            100% {
+                width: 100%;
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <div class="box"></div>
+    </div>
+
+</body>
+
+</html>
