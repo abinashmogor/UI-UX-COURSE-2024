@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Image Animation</title>
+    <style>
+        
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+
+    
+        .rotate-image {
+            width: 150px; 
+            height: 150px;
+            animation: rotate 20s linear infinite; 
+            border-radius: 50%; 
+        }
+
+        
+        @keyframes rotate {
+            from {
+                transform: rotate(0deg); 
+            }
+            to {
+                transform: rotate(360deg); 
+            }
+        }
+    </style>
+</head>
+<body>
+    <img class="rotate-image" src="https://themewagon.github.io/restoran/img/hero.png" alt="Rotating Image">
+</body>
+</html>

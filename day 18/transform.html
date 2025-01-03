@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            height: 150px;
+            width: 150px;
+            background-color: blueviolet;
+        }
+
+        .minibox{
+            height: 150px;
+            width: 150px;
+            background-color: lightgreen;
+        }
+
+        .minibox:hover{
+            transition: all 1;
+            cursor: pointer;
+            transform: rotate(60deg);
+            /* transform: rotate(360deg); */
+            /* transform: scale(2); */
+            /* transform: scaleX(2); */
+            /* transform: scaley(2); */
+
+            /* transform: skew(20 deg); */
+
+
+
+        }
+
+        .image{
+            height: 400px;
+            width: 400px;
+            transform: rotate(360deg);
+            animation: movebox 5s infinite;
+        }
+
+        .image:hover{
+            animation-play-state: rotate;
+        }
+
+        @keyframes movebox {
+            0% {
+                top: 0;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="minibox">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia totam sint et! Voluptatum nulla voluptatem exercitationem. Vero numquam, tenetur adipisci eius necessitatibus veniam cumque dolorum corporis totam ipsum, nemo nam!
+        </div>
+    </div>
+
+
+    <div class="image">
+        <img src="https://themewagon.github.io/restoran/img/hero.png" alt="Rotating image">
+    </div>
+</body>
+</html>
