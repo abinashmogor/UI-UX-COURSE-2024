@@ -9,6 +9,7 @@ body{
     font-family: 'Arial', sans-serif;
     background-color: #000;
     padding: 2rem;
+    
 }
 
 /* Navigation Container */
@@ -183,6 +184,7 @@ th {
 .features-chat {
     text-align: center;
     padding: 20px;
+    color: #fcf6fb;
 }
 
 .feature-grid {
@@ -219,7 +221,7 @@ th {
 }
 
 .feature-item button {
-    padding: 10px 20px;
+    padding: 5px 10px;
     background-color: #007BFF;
     color: white;
     border: none;
@@ -231,6 +233,71 @@ th {
     background-color: #0056b3;
 }
 
+section.chat{
+    color: white;
+    width: 300px;
+    margin: 0;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+section.button{
+    text-align: left;
+    margin-top: 50px;
+    padding: 40px;
+    border-radius: 20px;
+    /* background-color: #873AC5; */
+}
+
+section.button button{
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    /* border: none; */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+section.button button:hover{
+    background-color: #9683df;
+}
+
+.generative{
+    color: #e5e7eb;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+section.samrt{
+    text-align: left;
+    flex-direction: column;
+}
+
+.samrt h2 {
+    font-size: 1.8rem;  
+    color: #f9f4f4;        
+    margin-bottom: 10px; 
+}
+
+.samrt p {
+    font-size: 1rem;    
+    color: #555;        
+    line-height: 1.6;   
+    margin-bottom: 15px; 
+}
+
+.samrt ul {
+    list-style: disc inside; 
+    padding: 0;             
+    margin: 0;              
+}
+
+.samrt li {
+    font-size: 0.95rem; 
+    color: #666;        
+    margin-bottom: 8px; 
+}
 
 
 
@@ -239,8 +306,8 @@ th {
     display: flex;
     justify-content: space-between; 
     align-items: center; 
-    padding: 20px;
-    background-color: #1f2937;
+    padding: 15px;
+    background-color: #0c0d0e;
     color: #fff;
 }
 
@@ -250,11 +317,11 @@ th {
 
 .social-icons {
     display: flex;
-    gap: 20px; 
+    gap: 10px; 
 }
 
 .icon i {
-    font-size: 24px; 
+    font-size: 10px; 
     color: white;
     transition: transform 0.3s ease;
 }
@@ -262,3 +329,15 @@ th {
 .icon:hover i {
     transform: scale(1.1); 
 }
+
+
+
+
+
+
+
+
+
+
+
+
